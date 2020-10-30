@@ -1,0 +1,27 @@
+.team-cta {
+    padding: 58px 0 57px 0;
+    background: url("/images/team-cta.png") no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+    p {
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.8px;
+        margin-bottom: 30px;
+    }
+    button {
+        width: 140px;
+        height: 37px;
+        border-radius: 19px;
+        border: 1px solid #ffffff;
+        background: transparent;
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+    button:hover {
+        cursor: pointer;
+        background-color: #e4dcdca6;
+    }
+}

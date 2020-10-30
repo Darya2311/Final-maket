@@ -1,0 +1,652 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous')
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="shortcut icon", href="images/favicon.ico")
+        link(rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.10.0/css/all.css' integrity='sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p' crossorigin='anonymous')
+        link(href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Source+Sans+Pro:wght@200;300;600;700;900&display=swap' rel='stylesheet')
+        title BOUNCY 
+    body
+        section.first-screen.media
+            .container
+                .navigation
+                    .navigation__image
+                        img(src="/images/bouncy.png", alt="Bouncy")
+                    nav.navbar.navbar-expand-lg.navbar-light
+                        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+                            span.navbar-toggler-icon
+                        #navbarNav.collapse.navbar-collapse
+                            ul.navbar-nav
+                                li.nav-item
+                                    a.nav-link(href='#') Hello
+                                li.nav-item
+                                    a.nav-link(href='#') About
+                                li.nav-item
+                                    a.nav-link(href='#') Services
+                                li.nav-item
+                                    a.nav-link(href='#') Portfolio
+                                li.nav-item
+                                    a.nav-link(href='#') Team
+                                li.nav-item
+                                    a.nav-link(href='#') Blog
+                                li.nav-item-last
+                                    a.nav-link(href='#') Contact
+                .first-screen__content
+                    h2 We are code cafe
+                    p.first-screen-text.media At vero eos et accusamus et iusto odio dignissimos ducimus qui 
+                        | blanditiis praesentium voluptatum
+                    p
+                        a.btn.btn-primary(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+                            i.fas.fa-chevron-down
+                    #collapseExample.collapse
+                        .card.card-body
+                            | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+
+        section.about-us
+            .container   
+                .about-us__content
+                    .about-text
+                        h2 This is bouncy
+                        p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
+                        .button-about
+                            a.btn.btn-primary(data-toggle='collapse' href='#collapseExample-2' role='button' aria-expanded='false' aria-controls='collapseExample')
+                                | Read more
+                        #collapseExample-2.collapse
+                            .card.card-body
+                                | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.                    
+                    .about-image
+                        img(src="images/ipad.jpg", alt="Ipad")
+
+        section.details.media
+            .container
+                .details__header
+                    h2 Details about bouncy
+                    p At vero eos et accusamus et iusto odio dignissimos 
+                        |ducimus qui blanditiis praesentium
+                .details__icons
+                    .icon 
+                        i.far.fa-heart
+                    .icon 
+                        i.fas.fa-mouse-pointer
+                    .icon 
+                        i.far.fa-lightbulb
+                .details__footer     
+                    h2 Creative Ideas
+                    .paragraphs   
+                        p.first-paragraph At 
+                            span.olive vero 
+                            |eos et accusamus et iusto odio dignissimos 
+                            span.fatty ducimus 
+                            |qui blanditiis praesentium voluptatum deleniti atque 
+                            |corrupti quos dolores  
+                        p.second-paragraph At vero eos et accusamus et iusto odio dignissimos ducimus qui 
+                            |blanditiis praesentium voluptatum deleniti atque 
+                            span.fatty corrupti quos 
+                            |dolores et quas molestias  
+                            span.olive excepturi 
+                            |sint occaecati cupiditate non provident,  
+                            span.fatty similique 
+                            |sunt in culpa qui officia deserunt mollitia animi, 
+                            |id est laborum et dolorum fuga. Et harum quidem r
+
+        section.future-projects
+            .future-projects-text
+                h2 Featured projects
+                p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            .future-projects-gallery
+                .whisky-image.media
+                    .upper-layer
+                        p Whisky
+                .vintage-image.media
+                    .upper-layer 
+                        p Vintage
+                .books-image.media
+                    .upper-layer 
+                        p Branding
+            .future-projects-footer
+                .upper-layer-footer
+                    .container
+                        p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+                        button Submit now
+
+        section.services.media
+            .container
+                .services__header
+                    h2 Our services
+                    p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                .services__content
+                    .services-icons
+                        .icon
+                            i.fas.fa-tools
+                        .icon
+                            i.fas.fa-paint-roller
+                        .icon
+                            i.fas.fa-gamepad
+                        .icon
+                            i.fas.fa-plug
+                    .services-text
+                        h2 Graphic design
+                        p.services-bot At vero eos et accusamus et 
+                            span.olive iusto 
+                            |odio dignissimos 
+                            span.fatty ducimus 
+                            |qui blanditiis praesentium voluptatum deleniti
+                        p quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, 
+                            span.olive similique sunt 
+                            |in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+                    .services-progress
+                        .skill-item
+                            .progress-item
+                                p 
+                                    span 80
+                                    |%
+                            p Branding
+                        .skill-item
+                            .progress-item
+                                p 
+                                    span 75
+                                    |%
+                            p Web Design
+                        .skill-item
+                            .progress-item
+                                p 
+                                    span 60
+                                    |%
+                            p UI/UX
+
+        section.impressed.media
+            .container
+                .impressed__text
+                    h2 Impressed ?
+                    p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+                        |praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+                    p.autor  - Abdullah Noman
+                    p.director Creatice Director, 
+                        span Code Cafe
+                .impressed__image
+                    img(src="/images/mac.png", alt="Mac-book")
+
+        section.portfolio.media
+            .container
+                .portfolio__header
+                    h2 The portfolio
+                    p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                .portfolio__navigation
+                    a(href="#") All works
+                        .border-a 
+                    a(href="#") Print
+                        .border-a 
+                    a(href="#") Identity
+                        .border-a 
+                    a(href="#") Branding
+                        .border-a 
+                    a(href="#") Web
+                        .border-a 
+                    a(href="#") HTML
+                        .border-a 
+                    a(href="#") Wordpress
+                        .border-a 
+                .portfolio__gallery
+                    .card
+                        img(src="/images/port/port1.png", alt="Port")
+                        .card-lay.media
+                            h2 Title here
+                            .card-lay-line
+                            p At vero eos et accusamus et iusto odio dignissimos 
+                                |ducimus qui blanditiis praesentium
+                            .card-lay-icons
+                                .icon
+                                    i.fas.fa-link
+                                .icon
+                                    i.far.fa-heart
+                    .card
+                        img(src="images/port/port2.png", alt="Port")
+                        .card-lay.media
+                            h2 Title here
+                            .card-lay-line
+                            p At vero eos et accusamus et iusto odio dignissimos 
+                                |ducimus qui blanditiis praesentium
+                            .card-lay-icons
+                                .icon
+                                    i.fas.fa-link
+                                .icon
+                                    i.far.fa-heart
+                    .card
+                        img(src="images/port/port3.png", alt="Port")                       
+                        .card-lay.media
+                            h2 Title here
+                            .card-lay-line
+                            p At vero eos et accusamus et iusto odio dignissimos 
+                                |ducimus qui blanditiis praesentium
+                            .card-lay-icons
+                                .icon
+                                    i.fas.fa-link
+                                .icon
+                                    i.far.fa-heart
+                    .card
+                        img(src="images/port/port4.png", alt="Port")    
+                        .card-lay.media
+                            h2 Title here
+                            .card-lay-line
+                            p At vero eos et accusamus et iusto odio dignissimos 
+                                |ducimus qui blanditiis praesentium
+                            .card-lay-icons
+                                .icon
+                                    i.fas.fa-link
+                                .icon
+                                    i.far.fa-heart
+                    .card
+                        img(src="images/port/port5.png", alt="Port") 
+                        .card-lay.media
+                            h2 Title here
+                            .card-lay-line
+                            p At vero eos et accusamus et iusto odio dignissimos 
+                                |ducimus qui blanditiis praesentium
+                            .card-lay-icons
+                                .icon
+                                    i.fas.fa-link
+                                .icon
+                                    i.far.fa-heart
+                    .card  
+                        img(src="images/port/port6.png", alt="Port") 
+                        .card-lay.media
+                            h2 Title here
+                            .card-lay-line
+                            p At vero eos et accusamus et iusto odio dignissimos 
+                                |ducimus qui blanditiis praesentium
+                            .card-lay-icons
+                                .icon
+                                    i.fas.fa-link
+                                .icon
+                                    i.far.fa-heart
+                    .card
+                        img(src="images/port/port7.png", alt="Port") 
+                        .card-lay.media
+                            h2 Title here
+                            .card-lay-line
+                            p At vero eos et accusamus et iusto odio dignissimos 
+                                |ducimus qui blanditiis praesentium
+                            .card-lay-icons
+                                .icon
+                                    i.fas.fa-link
+                                .icon
+                                    i.far.fa-heart
+                    .card   
+                        img(src="images/port/port8.png", alt="Port") 
+                        .card-lay.media
+                            h2 Title here
+                            .card-lay-line
+                            p At vero eos et accusamus et iusto odio dignissimos 
+                                |ducimus qui blanditiis praesentium
+                            .card-lay-icons
+                                .icon
+                                    i.fas.fa-link
+                                .icon
+                                    i.far.fa-heart
+                    .card 
+                        img(src="images/port/port9.png", alt="Port")
+                        .card-lay.media
+                            h2 Title here
+                            .card-lay-line
+                            p At vero eos et accusamus et iusto odio dignissimos 
+                                |ducimus qui blanditiis praesentium
+                            .card-lay-icons
+                                .icon
+                                    i.fas.fa-link
+                                .icon
+                                    i.far.fa-heart
+                    .card  
+                        img(src="images/port/port10.png", alt="Port")  
+                        .card-lay.media
+                            h2 Title here
+                            .card-lay-line
+                            p At vero eos et accusamus et iusto odio dignissimos 
+                                |ducimus qui blanditiis praesentium
+                            .card-lay-icons
+                                .icon
+                                    i.fas.fa-link
+                                .icon
+                                    i.far.fa-heart
+                    .card  
+                        img(src="images/port/port11.png", alt="Port") 
+                        .card-lay.media
+                            h2 Title here
+                            .card-lay-line
+                            p At vero eos et accusamus et iusto odio dignissimos 
+                                |ducimus qui blanditiis praesentium
+                            .card-lay-icons
+                                .icon
+                                    i.fas.fa-link
+                                .icon
+                                    i.far.fa-heart
+                    .card
+                        img(src="images/port/port12.png", alt="Port") 
+                        .card-lay.media
+                            h2 Title here
+                            .card-lay-line
+                            p At vero eos et accusamus et iusto odio dignissimos 
+                                |ducimus qui blanditiis praesentium
+                            .card-lay-icons
+                                .icon
+                                    i.fas.fa-link
+                                .icon
+                                    i.far.fa-heart
+                            
+        section.cta
+            .container
+                .cta__container
+                    p At vero eos et 
+                        span accusamus 
+                        |et iusto odio 
+                        span dignissimos 
+                        |ducimus qui blanditiis 
+                    button Start Project
+
+        section.team.media 
+            .container
+                .team__header   
+                    h2 The team
+                    p At vero eos et accusamus et iusto odio dignissimos 
+                        |ducimus qui blanditiis praesentium
+                .team__content
+                    #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+                        ol.carousel-indicators
+                            li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+                            li(data-target='#carouselExampleIndicators' data-slide-to='1')
+                            li(data-target='#carouselExampleIndicators' data-slide-to='2')
+                        .carousel-inner(style='min-height: 500px;')
+                            .carousel-item.active.flexible
+                                img(src='/images/man.png' alt='First slide')
+                                .team__content-text
+                                    .author
+                                        p Abdullah Noman
+                                        p Creative Director, Code Cafe
+                                    .main-text
+                                        |At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                    .skills
+                                        .skills-bar
+                                            .skills-text
+                                                p Branding
+                                                p 80%
+                                            .progress(style='height: 4px;')
+                                                .progress-bar.progress-bar-striped(role='progressbar' style='width: 80%' aria-valuenow='10' aria-valuemin='0' aria-valuemax='100')
+                                        .skills-bar
+                                            .skills-text
+                                                p Web Design
+                                                p 65%                                                                               
+                                            .progress(style='height: 4px;')
+                                                .progress-bar.progress-bar-striped(role='progressbar' style='width: 65%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+                                        .skills-bar
+                                            .skills-text
+                                                p User interface
+                                                p 75%                                             
+                                            .progress(style='height: 4px;')
+                                                .progress-bar.progress-bar-striped(role='progressbar' style='width: 75%' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100')
+                            .carousel-item.flexible
+                                img(src='/images/man.png' alt='Second slide')
+                                .team__content-text
+                                    .author
+                                        p Abdullah Noman
+                                        p Creative Director, Code Cafe
+                                    .main-text
+                                        |At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                    .skills
+                                        .skills-bar
+                                            .skills-text
+                                                p Branding
+                                                p 80%
+                                            .progress(style='height: 4px;')
+                                                .progress-bar.progress-bar-striped(role='progressbar' style='width: 80%' aria-valuenow='10' aria-valuemin='0' aria-valuemax='100')
+                                        .skills-bar
+                                            .skills-text
+                                                p Web Design
+                                                p 65%                                                                               
+                                            .progress(style='height: 4px;')
+                                                .progress-bar.progress-bar-striped(role='progressbar' style='width: 65%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+                                        .skills-bar
+                                            .skills-text
+                                                p User interface
+                                                p 75%                                             
+                                            .progress(style='height: 4px;')
+                                                .progress-bar.progress-bar-striped(role='progressbar' style='width: 75%' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100')
+                            .carousel-item.flexible
+                                img(src='/images/man.png' alt='Second slide')
+                                .team__content-text
+                                    .author
+                                        p Abdullah Noman
+                                        p Creative Director, Code Cafe
+                                    .main-text
+                                        |At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                    .skills
+                                        .skills-bar
+                                            .skills-text
+                                                p Branding
+                                                p 80%
+                                            .progress(style='height: 4px;')
+                                                .progress-bar.progress-bar-striped(role='progressbar' style='width: 80%' aria-valuenow='10' aria-valuemin='0' aria-valuemax='100')
+                                        .skills-bar
+                                            .skills-text
+                                                p Web Design
+                                                p 65%                                                                               
+                                            .progress(style='height: 4px;')
+                                                .progress-bar.progress-bar-striped(role='progressbar' style='width: 65%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+                                        .skills-bar
+                                            .skills-text
+                                                p User interface
+                                                p 75%                                             
+                                            .progress(style='height: 4px;')
+                                                .progress-bar.progress-bar-striped(role='progressbar' style='width: 75%' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100')
+
+        section.team-cta
+            p Already Loved Us? Let’s talk!
+            button Contact Us
+
+        section.testimonials.media
+            .container
+                .testimonials__header
+                    h2 Testimonials
+                    p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                .testimonials__container
+                    #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+                        ol.carousel-indicators
+                            li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+                            li(data-target='#carouselExampleIndicators' data-slide-to='1')
+                            li(data-target='#carouselExampleIndicators' data-slide-to='2')
+                        .carousel-inner
+                            .carousel-item.active.flexible
+                                img(src='/images/boy.png' alt='First slide')
+                                .team__content-text
+                                    p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+                                        |praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
+                                        |excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.
+                                    p PARTHO
+                                    p FOUNDER, ARTWAYS BD
+                            .carousel-item.flexible
+                                img(src='/images/boy.png' alt='First slide')
+                                .team__content-text
+                                    p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+                                        |praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
+                                        |excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.
+                                    p HARDELO
+                                    p FOUNDER, ARTWAYS BD
+                            .carousel-item.flexible
+                                img(src='/images/boy.png' alt='First slide')
+                                .team__content-text
+                                    p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+                                        |praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
+                                        |excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.
+                                    p PARTHO
+                                    p FOUNDER, ARTWAYS BD
+
+        section.blog.media
+            .container
+                #carouselExampleControls.carousel.slide(data-ride='carousel')
+                    .carousel-inner
+                        .carousel-item.active
+                            .blog__header
+                                h2  latest news
+                                p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            .blog__content  
+                                h2 The trending Landing Pages
+                                p.by by 
+                                    span Kabir Uddin
+                                p.place 6950 Likes - 243 Comments - 703 shares
+                                p.main At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+                                    |praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
+                                    |excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui 
+                                    |officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem 
+                                    |rerum facilis est et expedita distinctio...  
+                                p
+                                    a.btn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+                                        | + Read More
+                                #collapseExample.collapse
+                                    .card.card-body
+                                        | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        .carousel-item
+                            .blog__header
+                                h2 news
+                                p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            .blog__content  
+                                h2 The trending Landing Pages
+                                p.by by 
+                                    span Kabir Uddin
+                                p.place 6950 Likes - 243 Comments - 703 shares
+                                p.main At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+                                    |praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
+                                    |excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui 
+                                    |officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem 
+                                    |rerum facilis est et expedita distinctio...  
+                                p
+                                    a.btn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+                                        | + Read More
+                                #collapseExample.collapse
+                                    .card.card-body
+                                        | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.                
+                        .carousel-item
+                            .blog__header
+                                h2 Hello world
+                                p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            .blog__content  
+                                h2 The trending Landing Pages
+                                p.by by 
+                                    span Kabir Uddin
+                                p.place 6950 Likes - 243 Comments - 703 shares
+                                p.main At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+                                    |praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
+                                    |excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui 
+                                    |officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem 
+                                    |rerum facilis est et expedita distinctio...  
+                                p
+                                    a.btn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+                                        | + Read More
+                                #collapseExample.collapse
+                                    .card.card-body
+                                        | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    ol.carousel-indicators.dotts
+                        li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+                        li(data-target='#carouselExampleIndicators' data-slide-to='1')
+                        li(data-target='#carouselExampleIndicators' data-slide-to='2')
+                 
+        section.prices.media
+            .container
+                .prices__header
+                    h2 Our prices
+                    p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                .prices__content
+                    .prices__content-box
+                        .box-header Premium
+                        .box-body
+                            p $ 60
+                            p Per Month
+                    .prices__content-box
+                        .medium-body
+                            p Full Branding
+                            p Project Management 
+                            p Unlimited Revisions
+                            p 24/7 h Service
+                            p Free Domain
+                            p Free Hosting
+                        .box-header.foot Let's Start
+                    .prices__content-box
+                        .box-header Exclusive
+                        .box-body
+                            p $ 80
+                            p Per Month
+       
+        section.subscribe.media
+            .container
+                h2 Subscribe us
+                p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                form 
+                    input(type="email" placeholder="Email Address")
+                    button SUBMIT
+
+        section.data.media
+            .container
+                .data__header
+                    h2 Contact us
+                    p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                .data__boxes
+                    .data-box
+                        .data-box-head.first-screen-icon
+                            i.far.fa-envelope 
+                        .data-box-footer
+                            p EMAIL
+                            p hello@codecafe.com
+                            p Personal@codecafe.com
+                    .data-box
+                        .data-box-head.second-screen
+                            i.fas.fa-map-marker-alt
+                        .data-box-footer
+                            p Our office
+                            p 240 Bhatikhana, 8200 Barisal
+                            p Bangladesh
+                    .data-box
+                        .data-box-head.third-screen
+                            i.fas.fa-phone-alt
+                        .data-box-footer
+                            p Phone
+                            p +00 11 66 99 66 44
+                            p 11 99 66 44 065
+
+        section.contact-form
+            .contact-form__data.media
+                .container
+                    form
+                        .data-info 
+                            input(type="text" placeholder="Your name")
+                            input(type="text" placeholder="Email address")
+                            input(type="text", placeholder="Subject")
+                        textarea(name="smth")
+                        button SUBMIT NOW
+            .contact-form__map
+                iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35293.25892753465!2d27.561521976052216!3d53.89970335090289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf89b883a6df%3A0xdfd1661f4084d6c6!2z0J_QsNGA0Log0J_QvtCx0LXQtNGL!5e0!3m2!1sru!2sby!4v1604076068697!5m2!1sru!2sby' width='600' height='450' frameborder='0' style='border:0;' allowfullscreen='' aria-hidden='false' tabindex='0')
+                .lower-lay
+                    p FIND US ON THE MAP
+                    button 
+                        i.fas.fa-chevron-right
+
+        section.footer 
+            img(src="/images/bou.png", alt="Bouncy")    
+            p Copyright 2015. All rights Reserved
+            .footer__icons   
+                .icon-footer
+                    i.fab.fa-facebook-f
+                .icon-footer
+                    i.fab.fa-twitter
+                .icon-footer
+                    i.fab.fa-linkedin-in
+                .icon-footer
+                    i.fab.fa-instagram
+                .icon-footer
+                    i.fab.fa-vk
+
+
+
+
+
+        script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js", integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj", crossorigin="anonymous")
+        script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js", integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo", crossorigin="anonymous")
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js", integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI", crossorigin="anonymous")                

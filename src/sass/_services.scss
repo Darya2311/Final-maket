@@ -1,0 +1,107 @@
+.services {
+    padding: 80px 0 140px 0;
+    background-color: #F3F3F3;
+    .services__header {
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+        h2 {
+            @include header;
+        }
+        p {
+            @include tipical-paragraph;
+        }
+    }
+    .services__content {
+        display: flex;
+        justify-content: space-between;
+        .services-icons {
+            padding-top: 10px;
+            margin-right: 20px;
+            .icon {
+                width: 53px;
+                height: 53px;
+                border-radius: 26px;
+                background-color: #81868e;
+                margin-bottom: 15px;
+                color: #fff;
+                text-align: center;
+                i {
+                    transform: translateY(55%);
+                    font-size: 25px;
+                }
+            }
+            .icon:hover {
+                cursor: pointer;
+                background-color: #19bd9a;
+            }
+            .icon:last-child{
+                margin-bottom: 0;
+            }
+        }
+        .services-text {
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+            h2 {
+                font-size: 20px;
+                letter-spacing: 1px;
+                color: #464646;
+                font-weight: 400;
+                margin-bottom: 30px;
+            }
+            p {
+                font-size: 16px;
+                letter-spacing: 1px;
+                line-height: 28px;
+                color: #81868e;
+                font-weight: 400;
+                span.olive {
+                    @include olive
+                }
+                span.fatty {
+                    @include fatty
+                }
+            }
+            p.services-bot {
+                margin-bottom: 40px;
+            }
+        }
+        
+    }
+    .services-progress {
+        display: flex;
+        align-items: center;
+        .skill-item {
+            margin-right: 40px;
+            .progress-item{
+                margin-bottom: 30px;
+                width: 118px;
+                height: 118px;
+                border-radius: 59px;
+                background-color: transparent;
+                border: 4.5px solid #19bd9a;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                span {
+                    font-size: 25px;
+                    
+                }
+            }
+            p {
+                text-align: center;
+                @include tipical-paragraph;
+                margin-bottom: 0;
+            }
+        }
+        .skill-item:last-child {
+            margin-right: 0px; 
+        }
+    }
+
+}
+
+
+

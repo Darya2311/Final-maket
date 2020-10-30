@@ -1,0 +1,79 @@
+.team {
+    padding: 80px 0 100px 0;
+    .team__header {
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+        h2 {
+            @include header
+        }
+        p {
+            @include tipical-paragraph
+        }
+    }
+    .team__content{
+        .carousel-item.active.flexible {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .team__content-text {
+                width: 40%;
+                text-align: right;
+                .author {
+                    border-right: 4px solid  #19bd9a;
+                    padding-right: 43px;
+                    margin-bottom: 32px;
+                }
+                .main-text {
+                    @include tipical-paragraph;
+                    margin-bottom: 48px;
+                }
+                .skills{
+                    .skills-bar {
+                        .skills-text {
+                            display: flex;
+                            justify-content: space-between;
+                            color: #81868e;
+                            font-family: "Source Sans Pro";
+                            font-size: 16px;
+                            font-weight: 300;
+                            text-transform: uppercase;
+                            letter-spacing: 1.6px;
+                        }
+                    }
+                    .progress {
+                        margin-bottom: 36px;
+                        .progress-bar.progress-bar-striped {
+                            background-color: #19bd9a;
+                        }
+                    }
+
+
+
+                }
+            }
+            .team__content-text .author P:nth-child(1) {
+                color: #464646;
+                font-size: 20px;
+            }
+            .team__content-text .author P:nth-child(2) {
+                color: #81868e;
+                font-family: "Source Sans Pro";
+                font-size: 14px;
+                font-weight: 300;
+                font-style: italic;
+                text-transform: uppercase;
+                letter-spacing: 1.4px;
+            }
+        }
+        ol.carousel-indicators li {
+            width: 10px;
+            height: 10px;
+            border: 1px solid #19bd9a;
+            border-radius: 50%;
+        }
+        ol.carousel-indicators li.active {
+            background-color: #19bd9a;
+        }
+    }
+}

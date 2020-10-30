@@ -1,0 +1,37 @@
+.subscribe {
+    background: url("/images/sea.png") no-repeat;
+    background-size: cover;
+    padding: 80px 0 100px 0;
+    text-align: center;
+    h2 {
+        @include header;
+        color: #ffffff;
+    }
+    p {
+        @include tipical-paragraph;
+        color: #81868e;
+        margin: 0 auto;
+        width: 50%;
+        margin-bottom: 60px;
+    }
+    form {
+        input {
+            width: 358px;
+            height: 41px;
+            background: transparent;
+            outline: none;
+            border: 1px solid #81868e;
+            color: #cfd3d4;
+        }
+        button {
+            width: 151px;
+            height: 41px;
+            background-color: #19bd9a;
+            outline: none;
+            border: none;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}

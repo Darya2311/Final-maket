@@ -1,0 +1,77 @@
+.prices {
+    padding: 80px 0 100px 0;
+    background: #f3f3f3;
+    .prices__header {
+        margin: 0 auto;
+        text-align: center;
+        width: 30%;
+        h2 {
+            @include header;
+        }
+        p {
+            @include tipical-paragraph;
+        }
+    }
+    .prices__content {
+        display: flex;
+        justify-content: space-around;
+        .prices__content-box {
+            width: 20%;
+            height: 302px;
+            .box-header {
+                height: 67px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #19bd9a;
+                color: #ffffff;
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.8px;
+            }
+            .box-header.foot {
+                height: 67px;
+                text-transform: none;
+                font-size: 16px;
+                font-weight: 400;       
+            }
+            .box-body {
+                height: 235px;
+                background-color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                p:nth-child(1) {
+                    color: #1fbba6;
+                    font-family: "Source Sans Pro - Black";
+                    font-weight: bold;
+                    font-size: 42px;
+                }
+                p:nth-child(2) {
+                    color: #81868e;
+                    font-family: "Open Sans";
+                    font-size: 20px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                }
+            }
+            .medium-body {
+                height: 235px;
+                background: #ffffff;
+                color: #81868e;
+                padding-left: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                p { 
+                    font-family: "Open Sans";
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}

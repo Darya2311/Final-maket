@@ -1,0 +1,70 @@
+.data {
+    background: #f3f3f3;
+    padding: 80px 0 100px 0;
+    .data__header {
+        text-align: center;
+        margin: 0 auto;
+        h2 {
+            @include header;
+        }
+        p {
+            margin: 0 auto;
+            @include tipical-paragraph;
+            width: 50%;
+        }
+    }
+    .data__boxes {
+        display: flex;
+        justify-content: space-around;
+        .data-box {
+            height: 272px;
+            width: 30%;
+            .data-box-head {
+                height: 145px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                i {
+                    color: #fff;
+                    font-size: 40px;
+                }
+            }
+            .data-box-head.first-screen-icon {
+                background: url("/images/data1.png") no-repeat;
+                background-size: cover;
+            }
+            .data-box-head.second-screen {
+                background: url("/images/data2.png") no-repeat;
+                background-size: cover; 
+            }
+            .data-box-head.third-screen {
+                background: url("/images/data3.png") no-repeat;
+                background-size: cover; 
+            }
+            .data-box-footer {
+                height: 127px;
+                box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.05);
+                background-color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-transform: uppercase;
+                & p:nth-child(1) {
+                    color: #464646;
+                    font-size: 16px;
+                    letter-spacing: 0.64px;
+                    margin-bottom: 25px;
+                }
+                & p:nth-child(2) {
+                    color: #81868e;
+                }
+                & p:nth-child(3) {
+                    color: #81868e;
+                }
+            }
+        }
+    }  
+   
+}

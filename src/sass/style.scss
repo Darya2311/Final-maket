@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: "Open Sans";
+  }
+
+p, h2, h3{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+@mixin header {
+    font-size: 20px;
+    letter-spacing: 4px;
+    line-height: 12px;
+    color: #333b46;
+    font-weight: 300;
+    font-family: "Source Sans Pro";
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+@mixin tipical-paragraph {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #81868e;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+@mixin olive {
+    color:  #19bd9a;
+    font-weight: bold;
+    font-size: 16px;
+}
+@mixin fatty {
+    color: #464646;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+@import '_media.scss';
+@import '_first-screen.scss';
+@import '_about-us.scss';
+@import '_details.scss';
+@import '_future-projects.scss';
+@import '_services.scss';
+@import '_impressed.scss';
+@import '_portfolio.scss';
+@import '_cta.scss';
+@import '_team.scss';
+@import '_team-cta.scss';
+@import '_testimonials.scss';
+@import '_blog.scss';
+@import '_prices.scss';
+@import '_subscribe.scss';
+@import '_data.scss';
+@import '_contact-form.scss';
+@import '_footer.scss';

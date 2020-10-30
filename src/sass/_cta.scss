@@ -1,0 +1,35 @@
+.cta {
+    padding-bottom: 100px;
+    background: #f3f3f3;
+    .cta__container {
+        background: url("/images/CTA.png") no-repeat;
+        background-size: cover;
+        padding: 58px 0 57px 0;
+        text-align: center;
+        p {
+            color: #ffffff;
+            font-size: 20px;
+            line-height: 25px;
+            margin-bottom: 30px;
+            span {
+                font-weight: 700;
+                letter-spacing: 0.8px;
+            }
+        }
+        button {
+            width: 140px;
+            height: 37px;
+            border-radius: 19px;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+            font-size: 16px;
+            background-color: transparent;
+            outline: none;
+        }
+        button:hover {
+            cursor: pointer;
+            background-color: #e4dcdca6;
+        }
+      
+    }
+}

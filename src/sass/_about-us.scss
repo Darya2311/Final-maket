@@ -1,0 +1,39 @@
+.about-us {
+    padding: 80px 0 60px 0;
+    .about-us__content {
+        display: flex;
+        justify-content: space-between;
+        .about-text {
+            font-size: 14px;
+            letter-spacing: 1px;
+            line-height: 25px;
+            color: #81868e;
+            font-weight: 400;
+            h2 {
+                font-size: 20px;
+                letter-spacing: 4px;
+                line-height: 12px;
+                color: #333b46;
+                font-weight: 300;
+                font-family: "Source Sans Pro";
+                text-transform: uppercase;
+                margin-bottom: 50px;
+            }
+            p {
+                width: 58%;
+                margin-bottom: 35px;
+            }
+            .button-about a.btn.btn-primary{
+                width: 140px;
+                height: 37px;
+                border-radius: 19px;
+                background-color: transparent;
+                border: 1px solid #333b46;
+                font-size: 16px;
+                color: #333b46;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+}

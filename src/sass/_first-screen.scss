@@ -1,0 +1,77 @@
+.first-screen {
+    background: url("/images/screen.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 40px 0 78px 0;
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 232px;
+        .navigation__image {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        a.nav-link {
+            padding: 10px;
+            margin-right: 20px;
+            font-size: 16px;
+            line-height: 12px;
+            color: #ffffff;
+            font-weight: 400;
+            border-radius: 17px;
+            border: 1px solid transparent;     
+        }
+        li.nav-item-last  a.nav-link {
+            margin-right: 0px;
+        }
+        a.nav-link:hover {
+           cursor: pointer;
+           border: 1px solid #ffffff;  
+           background: #ffffff73; 
+        }
+        button.navbar-toggler{
+            border: 1px solid #ffffff;
+            outline: none;
+        }
+    }
+    .first-screen__content {
+        color: #ffffff;
+        text-align: center;
+        font-weight: 400;
+        h2 {
+            font-size: 35px;
+            letter-spacing: 7px;
+            line-height: 70px;
+            font-weight: 300;
+            font-family: "Source Sans Pro";
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+        .first-screen-text {
+            margin: 0 auto;
+            width: 60%;
+            letter-spacing: 1px;
+            line-height: 28px;
+            margin-bottom: 220px;
+        }
+        .btn.btn-primary {
+            width: 36px;
+            height: 36px;
+            border: none;
+            outline: none;
+            border-radius: 18px;
+            background-color: #19bd9a;
+            color: #ffffff;
+            i.fas.fa-chevron-down {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transform: translateY(30%);
+            }
+        }
+        .card {
+            background-color: transparent;
+        }
+    }
+}
