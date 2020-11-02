@@ -54,9 +54,12 @@
             left: 0;
             background-color: rgba(78, 75, 75, 0.822);
             transition: all 0.5s ease-in-out;
-            padding-top: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .upper-layer:hover {
+            cursor: pointer;
             opacity: 0;
             transition: all 0.5s ease-in-out;
         }

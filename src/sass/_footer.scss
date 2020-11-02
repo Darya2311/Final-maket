@@ -17,9 +17,11 @@
             width: 30px;
             height: 30px;
             border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             i {
                 color: #fff;
-                padding: 5px;
             }
         }
         .icon-footer:nth-child(1) {

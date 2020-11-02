@@ -9,7 +9,6 @@
         margin-bottom: 232px;
         .navigation__image {
             display: flex;
-            flex-direction: column;
             justify-content: center;
         }
         a.nav-link {
@@ -73,5 +72,12 @@
         .card {
             background-color: transparent;
         }
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 0;
+        right: 100px;
+      
     }
 }
