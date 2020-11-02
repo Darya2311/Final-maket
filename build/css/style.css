@@ -1212,16 +1212,14 @@ p, h2, h3 {
     color: #ffffff; }
 
 .contact-form .contact-form__map {
-  overflow: hidden;
-  position: relative;
-  height: 496px; }
-  .contact-form .contact-form__map iframe {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: relative; }
+  position: relative; }
+  .contact-form .contact-form__map:hover .lower-lay {
+    display: none; }
+  .contact-form .contact-form__map .map-block {
+    z-index: 999; }
+    .contact-form .contact-form__map .map-block iframe {
+      height: 400px;
+      width: 100%; }
   .contact-form .contact-form__map .lower-lay {
     position: absolute;
     width: 100%;
@@ -1243,11 +1241,12 @@ p, h2, h3 {
       border-radius: 50%;
       color: #ffffff;
       outline: none;
-      border: none; }
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
       .contact-form .contact-form__map .lower-lay button i {
         color: #fff; }
-  .contact-form .contact-form__map .lower-lay:hover {
-    opacity: 0; }
 
 .footer {
   padding: 80px 0 90px 0;

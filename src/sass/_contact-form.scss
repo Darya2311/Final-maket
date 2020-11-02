@@ -32,17 +32,20 @@
         }
     }
 
-    .contact-form__map{
-        overflow:hidden;
-        position:relative;
-        height: 496px;
-        iframe{
-            position:absolute;
-            left:0;
-            top:0;
-            height:100%;
-            width:100%;
-            position: relative;
+    .contact-form__map {
+        position: relative;
+
+        &:hover {
+            .lower-lay {
+                display: none;
+            }
+        }
+        .map-block {
+            z-index: 999;
+            iframe{
+                height:400px;
+                width:100%;
+            }
         }
         .lower-lay {
                 position: absolute;
@@ -67,14 +70,15 @@
                     color: #ffffff; 
                     outline: none;
                     border: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     i {
                         color: #fff;
                     }
                 }
         }
-        .lower-lay:hover {
-            opacity: 0;
-        }
+
     }
 
 }
