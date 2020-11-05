@@ -12,7 +12,7 @@
         }
     }
     .team__content{
-        .carousel-item.active.flexible {
+        .carousel-item-wrapper {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -47,9 +47,6 @@
                             background-color: #19bd9a;
                         }
                     }
-
-
-
                 }
             }
             .team__content-text .author P:nth-child(1) {

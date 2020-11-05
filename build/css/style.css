@@ -112,7 +112,7 @@ p, h2, h3 {
         line-height: 30px; }
     .portfolio.media .portfolio__gallery {
       grid-template-rows: repeat(36, 1fr); }
-    .portfolio.media .card-lay.media {
+    .portfolio.media .card:hover .card-lay.media {
       display: none; }
   .team.media {
     padding: 40px 0 40px 0; }
@@ -124,7 +124,7 @@ p, h2, h3 {
         margin-bottom: 20px; }
     .team.media .team__content img {
       margin-bottom: 20px; }
-    .team.media .team__content .carousel-item.active.flexible {
+    .team.media .team__content .carousel-item-wrapper {
       display: flex;
       flex-direction: column; }
   .testimonials.media {
@@ -133,19 +133,28 @@ p, h2, h3 {
       margin-bottom: 30px; }
     .testimonials.media .testimonials__header p {
       margin-bottom: 30px; }
-    .testimonials.media .testimonials__container .carousel-item.active.flexible {
+    .testimonials.media .testimonials__container .carousel-inner-wrapper {
       flex-direction: column;
       padding: 20px 40px; }
-      .testimonials.media .testimonials__container .carousel-item.active.flexible .team__content-text {
+      .testimonials.media .testimonials__container .carousel-inner-wrapper .team__content-text {
         margin: 20px 0;
         width: 100%; }
   .blog.media {
     padding: 30px 0 40px 0; }
+    .blog.media ol.carousel-indicators {
+      flex-direction: row;
+      right: unset;
+      top: unset;
+      transform: translateY(0%);
+      width: 50px;
+      height: unset;
+      bottom: -20px;
+      left: 30%; }
     .blog.media .carousel-inner {
-      width: 95%; }
-    .blog.media .carousel-item.active .blog__header {
+      width: 90%; }
+    .blog.media .blog-wrapper .blog__header {
       margin-bottom: 40px; }
-    .blog.media .carousel-item.active .blog__content p.place, .blog.media .carousel-item.active .blog__content p.main {
+    .blog.media .blog-wrapper .blog__content p.place, .blog.media .blog-wrapper .blog__content p.main {
       margin-bottom: 20px; }
   .prices.media {
     padding: 30px 0 20px 0; }
@@ -186,7 +195,7 @@ p, h2, h3 {
       width: 90%; } }
 
 .first-screen {
-  background: url("/images/screen.jpg") no-repeat;
+  background: url("../images/screen.jpg") no-repeat;
   background-size: cover;
   width: 100%;
   padding: 40px 0 78px 0; }
@@ -387,19 +396,19 @@ p, h2, h3 {
     .future-projects .future-projects-gallery .whisky-image {
       width: 50%;
       height: 400px;
-      background: url("/images/whisky.jpg") no-repeat;
+      background: url("../images/whisky.jpg") no-repeat;
       background-size: cover;
       position: relative; }
     .future-projects .future-projects-gallery .vintage-image {
       width: 25%;
       height: 400px;
-      background: url("/images/vintage.jpg") no-repeat;
+      background: url("../images/vintage.jpg") no-repeat;
       background-size: cover;
       position: relative; }
     .future-projects .future-projects-gallery .books-image {
       width: 25%;
       height: 400px;
-      background: url("/images/books.jpg") no-repeat;
+      background: url("../images/books.jpg") no-repeat;
       background-size: cover;
       position: relative; }
     .future-projects .future-projects-gallery p {
@@ -429,7 +438,7 @@ p, h2, h3 {
   .future-projects .future-projects-footer {
     width: 100%;
     height: 110px;
-    background: url("/images/foot.jpg") no-repeat;
+    background: url("../images/foot.jpg") no-repeat;
     background-size: cover;
     position: relative; }
     .future-projects .future-projects-footer .upper-layer-footer {
@@ -567,7 +576,7 @@ p, h2, h3 {
 
 .impressed {
   padding: 60px 0 100px 0;
-  background: url("/images/hat.jpg") no-repeat;
+  background: url("../images/hat.jpg") no-repeat;
   background-size: cover; }
   .impressed .container {
     display: flex;
@@ -669,10 +678,7 @@ p, h2, h3 {
       height: 100%;
       background: rgba(0, 0, 0, 0.658);
       transition: all 0.5s ease-in-out;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; }
+      display: none; }
       .portfolio .portfolio__gallery .card-lay h2 {
         font-size: 20px;
         letter-spacing: 4px;
@@ -708,8 +714,11 @@ p, h2, h3 {
           .portfolio .portfolio__gallery .card-lay .card-lay-icons .icon i {
             color: #ffffff8a;
             padding: 6px; }
-    .portfolio .portfolio__gallery .card-lay:hover {
-      opacity: 0;
+    .portfolio .portfolio__gallery .card:hover .card-lay {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       transition: all 0.5s ease-in-out; }
   .portfolio .card:nth-child(1) {
     grid-column: 1 / 2;
@@ -752,7 +761,7 @@ p, h2, h3 {
   padding-bottom: 100px;
   background: #f3f3f3; }
   .cta .cta__container {
-    background: url("/images/CTA.png") no-repeat;
+    background: url("../images/CTA.png") no-repeat;
     background-size: cover;
     padding: 58px 0 57px 0;
     text-align: center; }
@@ -799,18 +808,18 @@ p, h2, h3 {
       color: #81868e;
       font-weight: 400;
       margin-bottom: 60px; }
-  .team .team__content .carousel-item.active.flexible {
+  .team .team__content .carousel-item-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between; }
-    .team .team__content .carousel-item.active.flexible .team__content-text {
+    .team .team__content .carousel-item-wrapper .team__content-text {
       width: 40%;
       text-align: right; }
-      .team .team__content .carousel-item.active.flexible .team__content-text .author {
+      .team .team__content .carousel-item-wrapper .team__content-text .author {
         border-right: 4px solid  #19bd9a;
         padding-right: 43px;
         margin-bottom: 32px; }
-      .team .team__content .carousel-item.active.flexible .team__content-text .main-text {
+      .team .team__content .carousel-item-wrapper .team__content-text .main-text {
         font-size: 14px;
         letter-spacing: 1px;
         line-height: 25px;
@@ -818,7 +827,7 @@ p, h2, h3 {
         font-weight: 400;
         margin-bottom: 60px;
         margin-bottom: 48px; }
-      .team .team__content .carousel-item.active.flexible .team__content-text .skills .skills-bar .skills-text {
+      .team .team__content .carousel-item-wrapper .team__content-text .skills .skills-bar .skills-text {
         display: flex;
         justify-content: space-between;
         color: #81868e;
@@ -827,14 +836,14 @@ p, h2, h3 {
         font-weight: 300;
         text-transform: uppercase;
         letter-spacing: 1.6px; }
-      .team .team__content .carousel-item.active.flexible .team__content-text .skills .progress {
+      .team .team__content .carousel-item-wrapper .team__content-text .skills .progress {
         margin-bottom: 36px; }
-        .team .team__content .carousel-item.active.flexible .team__content-text .skills .progress .progress-bar.progress-bar-striped {
+        .team .team__content .carousel-item-wrapper .team__content-text .skills .progress .progress-bar.progress-bar-striped {
           background-color: #19bd9a; }
-    .team .team__content .carousel-item.active.flexible .team__content-text .author P:nth-child(1) {
+    .team .team__content .carousel-item-wrapper .team__content-text .author P:nth-child(1) {
       color: #464646;
       font-size: 20px; }
-    .team .team__content .carousel-item.active.flexible .team__content-text .author P:nth-child(2) {
+    .team .team__content .carousel-item-wrapper .team__content-text .author P:nth-child(2) {
       color: #81868e;
       font-family: "Source Sans Pro";
       font-size: 14px;
@@ -852,7 +861,7 @@ p, h2, h3 {
 
 .team-cta {
   padding: 58px 0 57px 0;
-  background: url("/images/team-cta.png") no-repeat;
+  background: url("../images/team-cta.png") no-repeat;
   background-size: cover;
   text-align: center;
   color: #ffffff; }
@@ -897,15 +906,15 @@ p, h2, h3 {
       color: #81868e;
       font-weight: 400;
       margin-bottom: 60px; }
-  .testimonials .testimonials__container .carousel-item.active.flexible {
+  .testimonials .testimonials__container .carousel-inner-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
     padding: 60px 100px; }
-    .testimonials .testimonials__container .carousel-item.active.flexible .team__content-text {
+    .testimonials .testimonials__container .carousel-inner-wrapper .team__content-text {
       width: 65%; }
-    .testimonials .testimonials__container .carousel-item.active.flexible .team__content-text p:nth-child(1) {
+    .testimonials .testimonials__container .carousel-inner-wrapper .team__content-text p:nth-child(1) {
       font-size: 14px;
       letter-spacing: 1px;
       line-height: 25px;
@@ -913,12 +922,12 @@ p, h2, h3 {
       font-weight: 400;
       margin-bottom: 60px;
       margin-bottom: 30px; }
-    .testimonials .testimonials__container .carousel-item.active.flexible .team__content-text p:nth-child(2) {
+    .testimonials .testimonials__container .carousel-inner-wrapper .team__content-text p:nth-child(2) {
       color: #19bd9a;
       font-weight: bold;
       font-size: 16px;
       margin-bottom: 12px; }
-    .testimonials .testimonials__container .carousel-item.active.flexible .team__content-text p:nth-child(3) {
+    .testimonials .testimonials__container .carousel-inner-wrapper .team__content-text p:nth-child(3) {
       color: #464646;
       font-size: 14px;
       font-weight: 400;
@@ -933,50 +942,50 @@ p, h2, h3 {
     background-color: #19bd9a; }
 
 .blog {
-  background: url("/images/blog.png") no-repeat;
+  background: url("../images/blog.png") no-repeat;
   background-size: cover;
   padding: 80px 0 104px 0; }
   .blog .carousel-inner {
     width: 80%; }
-  .blog .carousel-item.active .blog__header {
+  .blog .blog-wrapper .blog__header {
     width: 50%;
     color: #b2b3b3;
     margin-bottom: 100px; }
-    .blog .carousel-item.active .blog__header h2 {
+    .blog .blog-wrapper .blog__header h2 {
       font-family: "Source Sans Pro";
       font-size: 20px;
       font-weight: 300;
       text-transform: uppercase;
       letter-spacing: 4px;
       margin-bottom: 40px; }
-    .blog .carousel-item.active .blog__header p {
+    .blog .blog-wrapper .blog__header p {
       color: #b2b3b3;
       letter-spacing: 0.7px; }
-  .blog .carousel-item.active .blog__content {
+  .blog .blog-wrapper .blog__content {
     margin-left: 70px; }
-    .blog .carousel-item.active .blog__content h2 {
+    .blog .blog-wrapper .blog__content h2 {
       color: #e1e4e9;
       letter-spacing: 0.8px;
       margin-bottom: 12px; }
-    .blog .carousel-item.active .blog__content p.by {
+    .blog .blog-wrapper .blog__content p.by {
       color: #81868e;
       font-family: "Source Sans Pro";
       font-style: italic;
       text-transform: uppercase;
       letter-spacing: 1.4px;
       margin-bottom: 20px; }
-      .blog .carousel-item.active .blog__content p.by span {
+      .blog .blog-wrapper .blog__content p.by span {
         color: #19bd9a; }
-    .blog .carousel-item.active .blog__content p.place, .blog .carousel-item.active .blog__content p.main {
+    .blog .blog-wrapper .blog__content p.place, .blog .blog-wrapper .blog__content p.main {
       color: #81868e;
       letter-spacing: 0.7px;
       margin-bottom: 60px; }
-    .blog .carousel-item.active .blog__content p.place {
+    .blog .blog-wrapper .blog__content p.place {
       margin-bottom: 51px; }
-    .blog .carousel-item.active .blog__content a.btn {
+    .blog .blog-wrapper .blog__content a.btn {
       color: #b2b3b3;
       margin-bottom: 40px; }
-    .blog .carousel-item.active .blog__content .card.card-body {
+    .blog .blog-wrapper .blog__content .card.card-body {
       background: transparent;
       color: #e1e4e9;
       margin-bottom: 30px; }
@@ -1074,7 +1083,7 @@ p, h2, h3 {
           line-height: 30px; }
 
 .subscribe {
-  background: url("/images/sea.png") no-repeat;
+  background: url("../images/sea.png") no-repeat;
   background-size: cover;
   padding: 80px 0 100px 0;
   text-align: center; }
@@ -1156,13 +1165,13 @@ p, h2, h3 {
           color: #fff;
           font-size: 40px; }
       .data .data__boxes .data-box .data-box-head.first-screen-icon {
-        background: url("/images/data1.png") no-repeat;
+        background: url("../images/data1.png") no-repeat;
         background-size: cover; }
       .data .data__boxes .data-box .data-box-head.second-screen {
-        background: url("/images/data2.png") no-repeat;
+        background: url("../images/data2.png") no-repeat;
         background-size: cover; }
       .data .data__boxes .data-box .data-box-head.third-screen {
-        background: url("/images/data3.png") no-repeat;
+        background: url("../images/data3.png") no-repeat;
         background-size: cover; }
       .data .data__boxes .data-box .data-box-footer {
         height: 127px;

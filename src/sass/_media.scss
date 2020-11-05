@@ -141,7 +141,7 @@
         .portfolio__gallery{
             grid-template-rows: repeat(36, 1fr);
         }
-        .card-lay.media{
+        .card:hover .card-lay.media {
            display: none;
         }
     }
@@ -161,7 +161,7 @@
             img {
                 margin-bottom: 20px;
             }
-            .carousel-item.active.flexible {
+            .carousel-item-wrapper {
                 display: flex;
                 // flex-wrap: wrap;
                 flex-direction: column;
@@ -179,7 +179,7 @@
             }
         }
         .testimonials__container {
-            .carousel-item.active.flexible {
+            .carousel-inner-wrapper {
                 flex-direction: column;
                 padding: 20px 40px;
                 .team__content-text {
@@ -192,19 +192,29 @@
 
     .blog.media {
         padding: 30px 0 40px 0;
-        .carousel-inner {
-            width: 95%;
+        ol.carousel-indicators {
+            flex-direction: row;
+            right: unset;
+            top: unset;
+            transform: translateY(0%);
+            width: 50px;
+            height: unset;
+            bottom: -20px;
+            left: 30%;
         }
-        .carousel-item.active {
-            .blog__header {
-                margin-bottom: 40px;
-            }
-            .blog__content {
-                p.place, p.main {
-                    margin-bottom: 20px;
+        .carousel-inner {
+            width: 90%;
+        }
+            .blog-wrapper {
+                .blog__header {
+                    margin-bottom: 40px;
+                }
+                .blog__content {
+                    p.place, p.main {
+                        margin-bottom: 20px;
+                    }
                 }
             }
-        }
     }
 
     .prices.media {
